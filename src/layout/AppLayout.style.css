@@ -19,6 +19,13 @@ body {
   border-color: red;
 }
 
+.search-btn:hover {
+  color: red;
+  border-color: red;
+  background-color: black;
+  opacity: 0.6;
+}
+
 .search-icon {
   margin-bottom: 3px;
 }
