@@ -30,7 +30,7 @@
 /* Media query for mobile screens */
 @media (max-width: 768px) {
   .banner {
-    height: 40vh;
+    height: 25vh;
     background-position: center;
     background-size: contain;
   }

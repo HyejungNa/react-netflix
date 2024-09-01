@@ -8,6 +8,7 @@
 .bg-body-tertiary {
   background-color: black !important;
   padding-top: 0;
+  padding-bottom: 0;
 }
 
 body {
