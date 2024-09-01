@@ -37,14 +37,14 @@
 
   .banner-text-area {
     width: 80%;
-    padding: 1rem;
+    padding: 1.2rem;
   }
 
   .banner-text-area h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .banner-text-area p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
