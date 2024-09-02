@@ -66,3 +66,13 @@
   text-align: center;
   margin-top: 0.7em;
 }
+
+@media (max-width: 768px) {
+  .movie-card:hover {
+    transform: scale(1.05) translateZ(0);
+  }
+
+  .overlay {
+    padding: 1em;
+  }
+}
