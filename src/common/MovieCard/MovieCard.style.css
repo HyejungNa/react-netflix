@@ -34,7 +34,7 @@
 
 .movie-title {
   font-size: 1.4em;
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
 }
 
 .badge {
@@ -44,7 +44,7 @@
 .imdb-icon {
   background-color: yellow;
   color: black;
-  font-size: 1.7em;
+  font-size: 1.8em;
   margin-right: 0.3em;
   border-radius: 5px;
 }
