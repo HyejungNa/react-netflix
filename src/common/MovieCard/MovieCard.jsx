@@ -3,8 +3,22 @@ import Badge from "react-bootstrap/Badge";
 import "./MovieCard.style.css";
 import { FaImdb } from "react-icons/fa6";
 import { TbRating18Plus } from "react-icons/tb";
+import { useMovieGenreQuery } from "../../hooks/useMovieGenre";
 
 const MovieCard = ({ movie }) => {
+  const { data: genreData } = useMovieGenreQuery();
+  // console.log("GenreData", genreData);
+
+  const showGenre = (genreIdList) => {
+    if (!genreData) return [];
+    const genreNameList = genreIdList.map((id) => {
+      const genreObj = genreData.find((genre) => genre.id === id);
+      return genreObj.name;
+    });
+
+    return genreNameList;
+  };
+
   return (
     <div
       style={{
@@ -17,7 +31,7 @@ const MovieCard = ({ movie }) => {
     >
       <div className="overlay">
         <h1 className="movie-title">{movie.title}</h1>
-        {movie.genre_ids.map((id) => (
+        {showGenre(movie.genre_ids).map((id) => (
           <Badge bg="danger" key={id}>
             {id}
           </Badge>
@@ -25,7 +39,7 @@ const MovieCard = ({ movie }) => {
         <div>
           <div className="movie-vote-average">
             <FaImdb className="imdb-icon" />
-            {movie.vote_average}
+            {movie.vote_average.toFixed(1)}
           </div>
           {/* <div>{movie.popularity}</div> */}
           <div>
