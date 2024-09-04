@@ -2,6 +2,9 @@ import React from "react";
 import Badge from "react-bootstrap/Badge";
 import "./MovieCard.style.css";
 import { FaImdb } from "react-icons/fa6";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import "@fortawesome/fontawesome-svg-core/styles.css";
+// import { faImdb } from "@fortawesome/free-brands-svg-icons";
 import { TbRating18Plus } from "react-icons/tb";
 import { useMovieGenreQuery } from "../../hooks/useMovieGenre";
 
@@ -39,6 +42,7 @@ const MovieCard = ({ movie }) => {
         <div>
           <div className="movie-vote-average">
             <FaImdb className="imdb-icon" />
+            {/* <FontAwesomeIcon icon={faImdb} size="2x" className="imdb" /> */}
             {movie.vote_average.toFixed(1)}
           </div>
           {/* <div>{movie.popularity}</div> */}
