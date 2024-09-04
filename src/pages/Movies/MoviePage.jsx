@@ -4,6 +4,7 @@ import { useSearchParams } from "react-router-dom";
 import { Alert, Container, Spinner, Row, Col } from "react-bootstrap";
 import MovieCard from "../../common/MovieCard/MovieCard";
 import ReactPaginate from "react-paginate";
+import "./MoviePage.style.css";
 
 const MoviePage = () => {
   const [query, setQuery] = useSearchParams();
