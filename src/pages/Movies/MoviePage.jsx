@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useSearchMovieQuery } from "../../hooks/useSearchMovie";
 import { useSearchParams } from "react-router-dom";
 import { Alert, Container, Spinner, Row, Col } from "react-bootstrap";
@@ -16,6 +16,11 @@ const MoviePage = () => {
     page,
   });
   console.log("ddd", data);
+
+  // Reset page to 1 whenever keyword changes
+  useEffect(() => {
+    setPage(1);
+  }, [keyword]);
 
   const handlePageClick = ({ selected }) => {
     setPage(selected + 1);
@@ -58,12 +63,12 @@ const MoviePage = () => {
               <Alert variant="warning">{`No results found for '${keyword}'`}</Alert>
             )}
             <ReactPaginate
-              nextLabel="next >"
+              nextLabel=">"
               onPageChange={handlePageClick}
               pageRangeDisplayed={3}
               marginPagesDisplayed={2}
               pageCount={data?.total_pages}
-              previousLabel="< previous"
+              previousLabel="<"
               pageClassName="page-item"
               pageLinkClassName="page-link"
               previousClassName="page-item"
