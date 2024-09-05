@@ -3,6 +3,8 @@
   display: flex;
   justify-content: center;
   padding: 1rem;
+  background-color: black;
+  color: white;
 }
 
 .page-item {
@@ -11,25 +13,26 @@
 
 .page-link {
   border-radius: 0.25rem;
-  border: 1px solid #ddd;
-  padding: 0.5rem 1rem;
-  color: #007bff;
+  border: none;
+  padding: 0.5rem 0.7rem;
   text-decoration: none;
+  background-color: black;
+  color: white;
 }
 
 .page-link:hover {
-  background-color: skyblue;
+  background-color: gray;
   color: white;
 }
 
 .active .page-link {
-  background-color: #007bff;
+  background-color: red;
+  border: none;
   color: white;
-  border-color: #007bff;
 }
 
 .page-item.disabled .page-link {
-  color: #6c757d;
+  background-color: black;
   pointer-events: none;
 }
 
