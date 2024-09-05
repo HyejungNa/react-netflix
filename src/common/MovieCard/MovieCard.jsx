@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Badge from "react-bootstrap/Badge";
 import "./MovieCard.style.css";
 import { FaImdb } from "react-icons/fa6";
@@ -12,6 +13,8 @@ const MovieCard = ({ movie }) => {
   const { data: genreData } = useMovieGenreQuery();
   // console.log("GenreData", genreData);
 
+  const navigate = useNavigate();
+
   const showGenre = (genreIdList) => {
     if (!genreData) return [];
     const genreNameList = genreIdList.map((id) => {
@@ -20,6 +23,10 @@ const MovieCard = ({ movie }) => {
     });
 
     return genreNameList;
+  };
+
+  const handleCardClick = () => {
+    navigate(`/movie/${movie.id}`);
   };
 
   return (
@@ -31,6 +38,7 @@ const MovieCard = ({ movie }) => {
           ")",
       }}
       className="movie-card"
+      onClick={handleCardClick}
     >
       <div className="overlay">
         <h1 className="movie-title">{movie.title}</h1>
