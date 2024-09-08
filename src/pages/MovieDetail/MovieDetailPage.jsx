@@ -66,10 +66,10 @@ const MovieDetailPage = () => {
               )}
             </div>
             <div>
-              <span>Budget: </span>${data?.budget.toLocaleString()}
+              <strong>Budget: </strong>${data?.budget.toLocaleString()}
             </div>
             <div>
-              <span>Release Date:</span> {data?.release_date}
+              <strong>Release Date:</strong> {data?.release_date}
             </div>
           </Col>
         </Row>
