@@ -39,3 +39,14 @@
 .page-item.disabled .page-link:hover {
   background-color: transparent;
 }
+
+@media (max-width: 768px) {
+  .movie-card-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .movie-card {
+    margin-bottom: 1.3rem;
+  }
+}

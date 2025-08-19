@@ -47,12 +47,17 @@ const MoviePage = () => {
           {/* <Col lg={4} xs={12}>
             Filter
           </Col> */}
-          <Col lg={10} xs={12}>
+          <Col lg={12} xs={12}>
             {moviesAvailable ? (
               <Row>
                 {data?.results.map((movie, index) => (
-                  <Col key={index} lg={4} xs={12}>
-                    <MovieCard movie={movie} />
+                  <Col
+                    key={index}
+                    lg={4}
+                    xs={12}
+                    className="movie-card-container"
+                  >
+                    <MovieCard movie={movie} className="movie-card" />
                   </Col>
                 ))}
               </Row>
