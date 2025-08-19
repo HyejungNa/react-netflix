@@ -47,10 +47,10 @@ const MoviePage = () => {
     <div>
       <Container>
         <Row>
-          <Col lg={4} xs={12}>
-            필터
-          </Col>
-          <Col lg={8} xs={12}>
+          {/* <Col lg={4} xs={12}>
+            Filter
+          </Col> */}
+          <Col lg={10} xs={12}>
             {moviesAvailable ? (
               <Row>
                 {data?.results.map((movie, index) => (

@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 const AppLayout = () => {
   const [keyword, setKeyword] = useState("");
   const navigate = useNavigate();
+
   const searchByKeyword = (event) => {
     event.preventDefault();
     navigate(`/movies?q=${keyword}`);
@@ -28,7 +29,7 @@ const AppLayout = () => {
         data-bs-theme="dark"
       >
         <Container fluid>
-          <Navbar.Brand href="#">
+          <Navbar.Brand href="/">
             <img
               src={netflixLogo}
               alt="netflix logo"
