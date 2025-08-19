@@ -1,3 +1,18 @@
 img {
   border-radius: 5px;
 }
+
+.movie-detail-information > div {
+  margin-bottom: 0.6em;
+}
+
+h2 {
+  padding-top: 0.5em;
+}
+
+@media (max-width: 768px) {
+  .poster-img {
+    display: flex;
+    justify-content: center;
+  }
+}
