@@ -35,7 +35,6 @@
   .banner {
     height: 25vh;
     background-position: center;
-    background-size: contain;
   }
 
   .banner:before {
@@ -52,14 +51,14 @@
   }
 
   .banner-text-area h1 {
-    font-size: 1.6rem;
-    padding-bottom: 0.3em;
+    font-size: 1.5rem;
+    padding-bottom: 0.3rem;
   }
 
   .banner-text-area p {
     font-size: 0.8rem;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
