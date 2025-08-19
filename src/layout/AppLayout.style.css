@@ -10,11 +10,6 @@
   padding-bottom: 0;
 }
 
-/* 
-body {
-  background-color: black;
-} */
-
 .search-btn {
   color: red;
   border-color: red;
@@ -29,4 +24,14 @@ body {
 
 .search-icon {
   margin-bottom: 3px;
+}
+
+@media (max-width: 768px) {
+  img {
+    height: 45vh;
+  }
+
+  .d-flex {
+    padding-bottom: 1.1rem;
+  }
 }
