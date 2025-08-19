@@ -1,0 +1,12 @@
+.spinner-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.custom-spinner {
+  width: 5rem;
+  height: 5rem;
+  color: red;
+}

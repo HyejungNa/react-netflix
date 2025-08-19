@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useSearchMovieQuery } from "../../hooks/useSearchMovie";
 import { useSearchParams } from "react-router-dom";
-import { Alert, Container, Spinner, Row, Col } from "react-bootstrap";
+import { Alert, Container, Row, Col } from "react-bootstrap";
 import MovieCard from "../../common/MovieCard/MovieCard";
 import ReactPaginate from "react-paginate";
 import "./MoviePage.style.css";
+import Loader from "../Homepage/components/Loader/Loader";
 
 const MoviePage = () => {
   const [query, setQuery] = useSearchParams();
@@ -29,11 +30,7 @@ const MoviePage = () => {
   if (isLoading) {
     return (
       <div className="spinner-area">
-        <Spinner
-          animation="border"
-          variant="danger"
-          style={{ width: "5rem", height: "5rem" }}
-        ></Spinner>
+        <Loader />
       </div>
     );
   }

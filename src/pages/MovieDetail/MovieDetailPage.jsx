@@ -1,10 +1,11 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import "./MovieDetailPage.style.css";
-import { Container, Row, Col, Spinner, Alert } from "react-bootstrap";
+import { Container, Row, Col, Alert } from "react-bootstrap";
 import { useSearchMovieById } from "../../hooks/useSearchMovieById";
 import { FaImdb } from "react-icons/fa6";
 import { TbRating18Plus } from "react-icons/tb";
+import Loader from "../Homepage/components/Loader/Loader";
 
 const MovieDetailPage = () => {
   const { id } = useParams();
@@ -12,15 +13,7 @@ const MovieDetailPage = () => {
   console.log(data);
 
   if (isLoading) {
-    return (
-      <div className="spinner-area">
-        <Spinner
-          animation="border"
-          variant="danger"
-          style={{ width: "5rem", height: "5rem" }}
-        />
-      </div>
-    );
+    return <Loader />;
   }
 
   if (isError) {
@@ -31,7 +24,7 @@ const MovieDetailPage = () => {
     <div>
       <Container>
         <Row>
-          <Col lg={4}>
+          <Col lg={4} className="poster-img">
             {data?.poster_path ? (
               <>
                 <img
