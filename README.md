@@ -11,6 +11,7 @@ This application offers an interactive movie-browsing experience with dynamic ba
 <br>
 ## Features
 ### Movie Browsing Features
+
 - Banner View: Display a dynamic main banner featuring highlighted movies
 - Movie Lists: Popular, Top Rated, and Upcoming movies in slider/carousel format
 - Hover Preview: View movie title, genres, rating, and adult indicator on hover
