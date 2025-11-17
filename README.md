@@ -7,7 +7,6 @@ This is a netflix clone application built with React and Java Script.
   
 ## Frontend Overview
 This application offers an interactive movie-browsing experience with dynamic banners, categorized sliders, movie previews, and search functionality.
-
 <br>
 ## Features
 ### Movie Browsing Features
