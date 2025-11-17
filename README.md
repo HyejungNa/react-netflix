@@ -1,5 +1,5 @@
 # Netflix clone website
-[Visit HAME E-commerce website](https://netflx-clone-by-alice.netlify.app/)
+[Visit Netflix clone website](https://netflx-clone-by-alice.netlify.app/)
 <br>
 This is a netflix clone application built with React and Java Script.
 
