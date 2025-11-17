@@ -23,11 +23,10 @@ It also utilizes Redux and supports automated deployment.
 ## Tech Stack
 ### FE
 * React
-* Redux-thunk
-* React Router
+* Java Script
 * Axios (Handle API requests)
-* Google OAuth (Social authentication)
-
+* Bootstrap
+  
 ### Devops
 * Netlify
 
