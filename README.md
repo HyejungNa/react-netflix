@@ -6,17 +6,16 @@ This is a netflix clone application built with React and Java Script.
 <br>
   
 ## Frontend Overview
-This includes user and admin features, with JWT and Google OAuth authentication.
-It also utilizes Redux and supports automated deployment.
+This application offers an interactive movie-browsing experience with dynamic banners, categorized sliders, movie previews, and search functionality.
+
 <br>
 ## Features
-### User Features
-- User Authentication: Email/password login and Google OAuth integration
-- Product Browsing: View products with details, filtering by category
-- Search products: Search products by name
-- Shopping Cart: Add, remove products and update quantity
-- Checkout & Payment: Order creation with shipping details
-- Order History: Track order status and view past orders
+### Movie Browsing Features
+- Banner View: Display a dynamic main banner featuring highlighted movies
+- Movie Lists: Popular, Top Rated, and Upcoming movies in slider/carousel format
+- Hover Preview: View movie title, genres, rating, and adult indicator on hover
+- Movie Detail Page: Access poster, title, rating, classification, overview, budget, release date 
+- Search Movies: Search movies by keyword and browse matching results
 
 <br>
   
@@ -24,7 +23,7 @@ It also utilizes Redux and supports automated deployment.
 ### FE
 * React
 * Java Script
-* Axios (Handle API requests)
+* Axios 
 * Bootstrap
   
 ### Devops
